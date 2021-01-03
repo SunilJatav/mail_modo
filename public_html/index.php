@@ -215,7 +215,7 @@ $convert_data = json_decode($json);
                 margin-top: 10px;
             }
             .tables{
-                height: 570px;
+                height: 610px;
                 background-color: #efefff;
             }
             .timeline{
@@ -489,7 +489,7 @@ $convert_data = json_decode($json);
                     </div>
                 </div>
                 <div class="col-md-8 tables" id="tableList">
-                    
+
                 </div>
             </div>
         </div>
@@ -521,7 +521,13 @@ $convert_data = json_decode($json);
                 if (row) {
                     table += `<tr class="table_row">
                              <td class="table_col">${extradata.awbno}</td>
-                             <td class="table_col">${extradata.awbno}</td>
+                             <td class="table_col">${extradata.carrier}</td>
+                             <td class="table_col">${extradata.from}</td>
+                             <td class="table_col">${extradata.to}</td>
+                             <td class="table_col">${extradata.carrier}</td>
+                             <td class="table_col">${extradata.pickup_date}</td>
+                             <td class="table_col">${extradata.expected_delivery_date}</td>
+                             <td class="table_col">${extradata.current_status}</td>
                      </tr>`;
                 }
             }
